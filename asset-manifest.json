@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-landing-pages/static/css/main.d1b05096.chunk.css",
+    "main.js": "/react-landing-pages/static/js/main.c40bc1a7.chunk.js",
+    "main.js.map": "/react-landing-pages/static/js/main.c40bc1a7.chunk.js.map",
+    "runtime-main.js": "/react-landing-pages/static/js/runtime-main.0816f685.js",
+    "runtime-main.js.map": "/react-landing-pages/static/js/runtime-main.0816f685.js.map",
+    "static/js/2.addc8e6f.chunk.js": "/react-landing-pages/static/js/2.addc8e6f.chunk.js",
+    "static/js/2.addc8e6f.chunk.js.map": "/react-landing-pages/static/js/2.addc8e6f.chunk.js.map",
+    "index.html": "/react-landing-pages/index.html",
+    "precache-manifest.5f910c6a03cb0f4bbe4ea801cacefd9d.js": "/react-landing-pages/precache-manifest.5f910c6a03cb0f4bbe4ea801cacefd9d.js",
+    "service-worker.js": "/react-landing-pages/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/react-landing-pages/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.addc8e6f.chunk.js.LICENSE.txt": "/react-landing-pages/static/js/2.addc8e6f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-landing-pages/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0816f685.js",
+    "static/js/2.addc8e6f.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.c40bc1a7.chunk.js"
+  ]
+}

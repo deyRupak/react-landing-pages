@@ -17,7 +17,7 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
-import test from '../static/images/cards/test.png'
+import test from '../static/images/cards/test.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {

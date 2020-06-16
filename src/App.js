@@ -9,14 +9,19 @@ import HomeGrid from './components/HomeGrid'
 function App() {
   return (
     <div className="App">
-
       <header className="App-header">
-        <p className='hr-width'>
+        <p className="hr-width">
           <img src={logo} className="App-logo" alt="logo" />
-          <hr/>
+          <hr />
         </p>
 
-        <HomeGrid/>
+        <Grid container spacing={8} justify="center">
+          {[0, 1, 2].map((value) => (
+            <Grid key={value} item>
+              <HomeGrid />
+            </Grid>
+          ))}
+        </Grid>
       </header>
     </div>
   );

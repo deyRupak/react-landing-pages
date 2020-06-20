@@ -21,14 +21,15 @@ import test from '../static/images/cards/test.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 345,
+        width: '30vh',
+    backgroundColor: '#333842'
     },
     media: {
         height: 0,
         paddingTop: '56.25%', // 16:9
     },
     avatar: {
-        backgroundColor: red[500],
+      backgroundColor: '#474e5c',
     },
 }));
 
@@ -40,26 +41,20 @@ export default function HomeGrid() {
         <CardHeader
           avatar={
             <Avatar aria-label="recipe" className={classes.avatar}>
-              S
+              r
             </Avatar>
           }
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title=""
+          subheader=""
         />
-        <CardMedia className={classes.media} image={test} title="Paella dish" />
+        <CardMedia className={classes.media} title="Paella dish" />
         <CardContent>
 
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
-            <VisibilityIcon />
+            <VisibilityIcon style={{color: 'white'}}/>
           </IconButton>
-          <IconButton aria-label="share">{/* <ShareIcon /> */}</IconButton>
         </CardActions>
       </Card>
     );

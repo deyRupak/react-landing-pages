@@ -14,15 +14,24 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <hr />
         </p>
-
-        <Grid container spacing={8} justify="center">
+      </header>
+        <Grid container justify="center" spacing={8} 
+          style={{
+            display: 'flex', 
+            maxWidth: '100%'
+        }}>
+          
           {[0, 1, 2].map((value) => (
             <Grid key={value} item>
               <HomeGrid />
             </Grid>
           ))}
+        
         </Grid>
-      </header>
+
+        <p style={{marginTop : '12vh', fontSize: 12}}>under construction</p>
+
+      
     </div>
   );
 }

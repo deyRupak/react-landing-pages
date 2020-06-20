@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/react-landing-pages/static/css/main.d1b05096.chunk.css",
-    "main.js": "/react-landing-pages/static/js/main.c40bc1a7.chunk.js",
-    "main.js.map": "/react-landing-pages/static/js/main.c40bc1a7.chunk.js.map",
+    "main.css": "/react-landing-pages/static/css/main.406a7fed.chunk.css",
+    "main.js": "/react-landing-pages/static/js/main.576a14f3.chunk.js",
+    "main.js.map": "/react-landing-pages/static/js/main.576a14f3.chunk.js.map",
     "runtime-main.js": "/react-landing-pages/static/js/runtime-main.0816f685.js",
     "runtime-main.js.map": "/react-landing-pages/static/js/runtime-main.0816f685.js.map",
-    "static/js/2.addc8e6f.chunk.js": "/react-landing-pages/static/js/2.addc8e6f.chunk.js",
-    "static/js/2.addc8e6f.chunk.js.map": "/react-landing-pages/static/js/2.addc8e6f.chunk.js.map",
+    "static/js/2.17f6643c.chunk.js": "/react-landing-pages/static/js/2.17f6643c.chunk.js",
+    "static/js/2.17f6643c.chunk.js.map": "/react-landing-pages/static/js/2.17f6643c.chunk.js.map",
     "index.html": "/react-landing-pages/index.html",
-    "precache-manifest.5f910c6a03cb0f4bbe4ea801cacefd9d.js": "/react-landing-pages/precache-manifest.5f910c6a03cb0f4bbe4ea801cacefd9d.js",
+    "precache-manifest.11ce2036e666b0aa57c5325ef6c2e3c7.js": "/react-landing-pages/precache-manifest.11ce2036e666b0aa57c5325ef6c2e3c7.js",
     "service-worker.js": "/react-landing-pages/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/react-landing-pages/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.addc8e6f.chunk.js.LICENSE.txt": "/react-landing-pages/static/js/2.addc8e6f.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/react-landing-pages/static/media/logo.5d5d9eef.svg"
+    "static/css/main.406a7fed.chunk.css.map": "/react-landing-pages/static/css/main.406a7fed.chunk.css.map",
+    "static/js/2.17f6643c.chunk.js.LICENSE.txt": "/react-landing-pages/static/js/2.17f6643c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-landing-pages/static/media/logo.5d5d9eef.svg",
+    "static/media/test.png": "/react-landing-pages/static/media/test.91bef388.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0816f685.js",
-    "static/js/2.addc8e6f.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.c40bc1a7.chunk.js"
+    "static/js/2.17f6643c.chunk.js",
+    "static/css/main.406a7fed.chunk.css",
+    "static/js/main.576a14f3.chunk.js"
   ]
 }

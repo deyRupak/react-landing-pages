@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-.App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  color: white; 
-}
 
 .App-logo {
   height: 10vmin;
@@ -42,6 +36,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.home {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
 }
 
 .hr-width {

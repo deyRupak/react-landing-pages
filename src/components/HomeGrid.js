@@ -20,42 +20,42 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import test from '../static/images/cards/test.png';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        width: '30vh',
+  root: {
+    width: '30vh',
     backgroundColor: '#333842'
-    },
-    media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
-    },
-    avatar: {
-      backgroundColor: '#474e5c',
-    },
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
+  avatar: {
+    backgroundColor: '#474e5c',
+  },
 }));
 
-export default function HomeGrid() {
-    const classes = useStyles();
+export default function InfoCard(props) {
+  const classes = useStyles();
 
-    return (
-      <Card className={classes.root}>
-        <CardHeader
-          avatar={
-            <Avatar aria-label="recipe" className={classes.avatar}>
-              r
+  return (
+    <Card className={classes.root}>
+      <CardHeader
+        avatar={
+          <Avatar aria-label="recipe" className={classes.avatar}>
+            r
             </Avatar>
-          }
-          title=""
-          subheader=""
-        />
-        <CardMedia className={classes.media} title="Paella dish" />
-        <CardContent>
-
-        </CardContent>
-        <CardActions disableSpacing>
-          <IconButton aria-label="add to favorites">
-            <VisibilityIcon style={{color: 'white'}}/>
-          </IconButton>
-        </CardActions>
-      </Card>
-    );
+        }
+        title=""
+        subheader=""
+      />
+      <CardMedia className={classes.media} title="Paella dish" />
+      <CardContent>
+        {props.number}
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <VisibilityIcon style={{ color: 'white' }} />
+        </IconButton>
+      </CardActions>
+    </Card>
+  );
 }

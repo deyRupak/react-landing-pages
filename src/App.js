@@ -13,7 +13,7 @@ import {
   Link
 } from "react-router-dom";
 
-import proj1 from './components/proj1'
+import proj1 from './components/proj1/index'
 
 function App() {
   return (
@@ -57,8 +57,6 @@ function App() {
               </Route>
 
               <Route path="/1" exact component={proj1} />
-              <Route path="/2" exact component={proj1} />
-              <Route path="/3" exact component={proj1} />
           
           </Switch>
           

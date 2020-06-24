@@ -49,7 +49,7 @@ function App() {
                     </Grid>
 
                   <p style={{ marginTop: "12vh", fontSize: 12 }}>under construction</p>
-                  <a href="https://github.com/deyRupak">
+              <a href="https://github.com/deyRupak" style={{ textDecoration: "none", color: 'white'}}>
                   <GitHubIcon style={{ position: "fixed", bottom: 30, right: 30 }} />
                   </a>
               

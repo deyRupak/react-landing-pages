@@ -14,25 +14,125 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import Paper from '@material-ui/core/Paper';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
+
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
+import SearchIcon from '@material-ui/icons/Search';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
+import EqualizerIcon from '@material-ui/icons/Equalizer';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import SendIcon from '@material-ui/icons/Send';
+import SettingsIcon from '@material-ui/icons/Settings';
+
+
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+import Chip from '@material-ui/core/Chip';
+import TableCell from '@material-ui/core/TableCell';
+import TableRow from '@material-ui/core/TableRow';
+
 export default function index(){
 
 return (
-<div>
+<>
     <Grid container className="bg" justify="center" alignItems="center">
         {/* sidebar */}
         <Grid item xs={2}>
-            <Paper style={{height: '98vh', width: '98%'}} elevation={3}>hi</Paper>
+            <Paper style={{height: '98vh', width: '98%'}} elevation={3}>
+                {/* logo */}
+                    <div className="sidebar-logo">
+                        <WhatshotIcon />
+                        RDx
+                    </div>
+                
+                {/* avatar */}
+                    <div className="sidebar-avatar">
+                        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{ width: '100px', height: '100px'}}/>
+                    </div>
+                    <TableRow>
+                        <TableCell align="center" colSpan={3} style={{borderBottom:"0px"}}>RDx<br />@rdx</TableCell>
+                    </TableRow>
+                    
+
+                {/* count */}
+                    <TableRow>
+                        <TableCell style={{ borderBottom: "0px" }} align='center'>0 <br />Followers</TableCell>
+                        <TableCell style={{ borderBottom: "0px" }} align='center'>0 <br />Posts</TableCell>
+                        <TableCell style={{ borderBottom: "0px" }} align='center'>0 <br />Following</TableCell>
+                    </TableRow>
+                
+                {/* Tabs */}
+                    <div className="tabs">
+                        <List>
+                            <ListItem button alignItems="center">
+                                <ListItemIcon>
+                                    <DashboardIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Feed" />
+                            </ListItem>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <SearchIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Explore" />
+                            </ListItem>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <NotificationsNoneIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Notifications" />
+                                <Chip label="0"/>
+                            </ListItem>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <SendIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Direct" />
+                                <Chip label="0" />
+                            </ListItem>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <EqualizerIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Stats" />
+                            </ListItem>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <SettingsIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Settings" />
+                            </ListItem>
+                        </List>
+                    </div>
+                    <Divider />
+                    <div className="logout">
+                        <ListItem button>
+                            <ListItemIcon>
+                                <ExitToAppIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Logout" />
+                        </ListItem>
+                    </div>
+                    
+            </Paper>
         </Grid>
+
+        {/* --------------------------------------------- */}
 
         {/* feed */}
         <Grid item xs={9}>
             <Paper style={{ height: '98vh', width: '100%' }} elevation={3}>
 
                 {/* navbar */}
-                
+
             </Paper>
         </Grid>
     </Grid>
-</div>
+</>
 );
 }

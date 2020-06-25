@@ -36,6 +36,8 @@ import Chip from '@material-ui/core/Chip';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 
+import Navbar from './Navbar';
+
 export default function index(){
 
 return (
@@ -43,7 +45,7 @@ return (
     <Grid container className="bg" justify="center" alignItems="center">
         {/* sidebar */}
         <Grid item xs={2}>
-            <Paper style={{height: '98vh', width: '98%'}} elevation={3}>
+                <Paper style={{ height: '98vh', width: '98%' }} elevation={3} style={{ backgroundColor:'#333842', color:'white'}}>
                 {/* logo */}
                     <div className="sidebar-logo">
                         <WhatshotIcon />
@@ -71,49 +73,49 @@ return (
                         <List>
                             <ListItem button alignItems="center">
                                 <ListItemIcon>
-                                    <DashboardIcon />
+                                    <DashboardIcon style={{color: 'white'}}/>
                                 </ListItemIcon>
                                 <ListItemText primary="Feed" />
                             </ListItem>
                             <ListItem button>
                                 <ListItemIcon>
-                                    <SearchIcon />
+                                    <SearchIcon style={{ color: 'white' }}/>
                                 </ListItemIcon>
                                 <ListItemText primary="Explore" />
                             </ListItem>
                             <ListItem button>
                                 <ListItemIcon>
-                                    <NotificationsNoneIcon />
+                                    <NotificationsNoneIcon style={{ color: 'white' }}/>
                                 </ListItemIcon>
                                 <ListItemText primary="Notifications" />
-                                <Chip label="0"/>
+                                <Chip label="1"/>
                             </ListItem>
                             <ListItem button>
                                 <ListItemIcon>
-                                    <SendIcon />
+                                    <SendIcon style={{ color: 'white' }}/>
                                 </ListItemIcon>
                                 <ListItemText primary="Direct" />
-                                <Chip label="0" />
+                                <Chip label="1" />
                             </ListItem>
                             <ListItem button>
                                 <ListItemIcon>
-                                    <EqualizerIcon />
+                                    <EqualizerIcon style={{ color: 'white' }}/>
                                 </ListItemIcon>
                                 <ListItemText primary="Stats" />
                             </ListItem>
                             <ListItem button>
                                 <ListItemIcon>
-                                    <SettingsIcon />
+                                    <SettingsIcon style={{ color: 'white' }}/>
                                 </ListItemIcon>
                                 <ListItemText primary="Settings" />
                             </ListItem>
                         </List>
                     </div>
-                    <Divider />
+                    <Divider style={{ backgroundColor: '#b4b9c2'}} variant="middle"/>
                     <div className="logout">
                         <ListItem button>
                             <ListItemIcon>
-                                <ExitToAppIcon />
+                                <ExitToAppIcon style={{ color: 'white' }}/>
                             </ListItemIcon>
                             <ListItemText primary="Logout" />
                         </ListItem>
@@ -126,9 +128,10 @@ return (
 
         {/* feed */}
         <Grid item xs={9}>
-            <Paper style={{ height: '98vh', width: '100%' }} elevation={3}>
+                <Paper style={{ height: '98vh', width: '100%', backgroundColor:'#4c515c' }} elevation={3}>
 
                 {/* navbar */}
+                <Navbar />
 
             </Paper>
         </Grid>

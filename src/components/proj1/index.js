@@ -37,6 +37,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 
 import Navbar from './Navbar';
+import Story from './Story';
 
 export default function index(){
 
@@ -133,7 +134,17 @@ return (
                 {/* navbar */}
                 <Navbar />
 
-            </Paper>
+                {/* Story */}
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    marginTop: 20
+                }}>
+                    <Story />
+                </div>
+
+                </Paper>
         </Grid>
     </Grid>
 </>

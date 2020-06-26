@@ -38,115 +38,156 @@ import TableRow from '@material-ui/core/TableRow';
 
 import Navbar from './Navbar';
 import Story from './Story';
+import Feed from './Feed';
+
+import faker from 'faker';
 
 export default function index(){
-
+    
 return (
-<>
+  <>
     <Grid container className="bg" justify="center" alignItems="center">
-        {/* sidebar */}
-        <Grid item xs={2}>
-                <Paper style={{ height: '98vh', width: '98%' }} elevation={3} style={{ backgroundColor:'#333842', color:'white'}}>
-                {/* logo */}
-                    <div className="sidebar-logo">
-                        <WhatshotIcon />
-                        RDx
-                    </div>
-                
-                {/* avatar */}
-                    <div className="sidebar-avatar">
-                        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" style={{ width: '100px', height: '100px'}}/>
-                    </div>
-                    <TableRow>
-                        <TableCell align="center" colSpan={3} style={{borderBottom:"0px"}}>RDx<br />@rdx</TableCell>
-                    </TableRow>
-                    
+      {/* sidebar */}
+      <Grid item xs={2}>
+        <Paper
+          style={{ height: "98vh", width: "98%" }}
+          elevation={3}
+          style={{ backgroundColor: "#333842", color: "white" }}
+        >
+          {/* logo */}
+          <div className="sidebar-logo">
+            <WhatshotIcon />
+            RDx
+          </div>
 
-                {/* count */}
-                    <TableRow>
-                        <TableCell style={{ borderBottom: "0px" }} align='center'>0 <br />Followers</TableCell>
-                        <TableCell style={{ borderBottom: "0px" }} align='center'>0 <br />Posts</TableCell>
-                        <TableCell style={{ borderBottom: "0px" }} align='center'>0 <br />Following</TableCell>
-                    </TableRow>
-                
-                {/* Tabs */}
-                    <div className="tabs">
-                        <List>
-                            <ListItem button alignItems="center">
-                                <ListItemIcon>
-                                    <DashboardIcon style={{color: 'white'}}/>
-                                </ListItemIcon>
-                                <ListItemText primary="Feed" />
-                            </ListItem>
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <SearchIcon style={{ color: 'white' }}/>
-                                </ListItemIcon>
-                                <ListItemText primary="Explore" />
-                            </ListItem>
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <NotificationsNoneIcon style={{ color: 'white' }}/>
-                                </ListItemIcon>
-                                <ListItemText primary="Notifications" />
-                                <Chip label="1"/>
-                            </ListItem>
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <SendIcon style={{ color: 'white' }}/>
-                                </ListItemIcon>
-                                <ListItemText primary="Direct" />
-                                <Chip label="1" />
-                            </ListItem>
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <EqualizerIcon style={{ color: 'white' }}/>
-                                </ListItemIcon>
-                                <ListItemText primary="Stats" />
-                            </ListItem>
-                            <ListItem button>
-                                <ListItemIcon>
-                                    <SettingsIcon style={{ color: 'white' }}/>
-                                </ListItemIcon>
-                                <ListItemText primary="Settings" />
-                            </ListItem>
-                        </List>
-                    </div>
-                    <Divider style={{ backgroundColor: '#b4b9c2'}} variant="middle"/>
-                    <div className="logout">
-                        <ListItem button>
-                            <ListItemIcon>
-                                <ExitToAppIcon style={{ color: 'white' }}/>
-                            </ListItemIcon>
-                            <ListItemText primary="Logout" />
-                        </ListItem>
-                    </div>
-                    
-            </Paper>
-        </Grid>
+          {/* avatar */}
+          <div className="sidebar-avatar">
+            <Avatar
+              alt="Remy Sharp"
+              src={faker.internet.avatar()}
+              style={{ width: "100px", height: "100px" }}
+            />
+          </div>
+          <TableRow>
+            <TableCell
+              align="center"
+              colSpan={3}
+              style={{ borderBottom: "0px" }}
+            >
+              {faker.name.findName()}
+              <br />
+              @random{faker.name.lastName()}
+            </TableCell>
+          </TableRow>
 
-        {/* --------------------------------------------- */}
+          {/* count */}
+          <TableRow>
+            <TableCell style={{ borderBottom: "0px" }} align="center">
+              0 <br />
+              Followers
+            </TableCell>
+            <TableCell style={{ borderBottom: "0px" }} align="center">
+              0 <br />
+              Posts
+            </TableCell>
+            <TableCell style={{ borderBottom: "0px" }} align="center">
+              0 <br />
+              Following
+            </TableCell>
+          </TableRow>
 
-        {/* feed */}
-        <Grid item xs={9}>
-                <Paper style={{ height: '98vh', width: '100%', backgroundColor:'#4c515c' }} elevation={3}>
+          {/* Tabs */}
+          <div className="tabs">
+            <List>
+              <ListItem button alignItems="center">
+                <ListItemIcon>
+                  <DashboardIcon style={{ color: "white" }} />
+                </ListItemIcon>
+                <ListItemText primary="Feed" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <SearchIcon style={{ color: "white" }} />
+                </ListItemIcon>
+                <ListItemText primary="Explore" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <NotificationsNoneIcon style={{ color: "white" }} />
+                </ListItemIcon>
+                <ListItemText primary="Notifications" />
+                <Chip label="1" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <SendIcon style={{ color: "white" }} />
+                </ListItemIcon>
+                <ListItemText primary="Direct" />
+                <Chip label="1" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <EqualizerIcon style={{ color: "white" }} />
+                </ListItemIcon>
+                <ListItemText primary="Stats" />
+              </ListItem>
+              <ListItem button>
+                <ListItemIcon>
+                  <SettingsIcon style={{ color: "white" }} />
+                </ListItemIcon>
+                <ListItemText primary="Settings" />
+              </ListItem>
+            </List>
+          </div>
+          <Divider style={{ backgroundColor: "#b4b9c2" }} variant="middle" />
+          <div className="logout">
+            <ListItem button>
+              <ListItemIcon>
+                <ExitToAppIcon style={{ color: "white" }} />
+              </ListItemIcon>
+              <ListItemText primary="Logout" />
+            </ListItem>
+          </div>
+        </Paper>
+      </Grid>
 
-                {/* navbar */}
-                <Navbar />
+      {/* --------------------------------------------- */}
 
-                {/* Story */}
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginTop: 20
-                }}>
-                    <Story />
-                </div>
+      {/* feed */}
+      <Grid item xs={9}>
+        <Paper
+          style={{ height: "98vh", width: "100%", backgroundColor: "#4c515c" }}
+          elevation={3}
+        >
+          {/* navbar */}
+          <Navbar />
 
-                </Paper>
-        </Grid>
+          {/* Story */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 20,
+            }}
+          >
+            <Story />
+          </div>
+
+          {/* Feed */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: 20,
+            }}
+          >
+            <Feed />
+          </div>
+        </Paper>
+      </Grid>
     </Grid>
-</>
+  </>
 );
 }

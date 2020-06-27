@@ -14,7 +14,7 @@ export default function Feed() {
   return (
     <Paper
       style={{
-        width: "auto",
+        width: "90%",
         height: "auto",
         backgroundColor: "transparent",
         textAlign: "left",

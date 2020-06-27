@@ -15,7 +15,7 @@ import IconButton from '@material-ui/core/IconButton';
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import Paper from '@material-ui/core/Paper';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
-
+import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -28,7 +28,7 @@ import EqualizerIcon from '@material-ui/icons/Equalizer';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import SendIcon from '@material-ui/icons/Send';
 import SettingsIcon from '@material-ui/icons/Settings';
-
+import Badge from '@material-ui/core/Badge';
 
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
@@ -42,8 +42,9 @@ import Feed from './Feed';
 
 import faker from 'faker';
 
+
 export default function index(){
-    
+  
 return (
   <>
     <Grid container className="bg" justify="center" alignItems="center">
@@ -57,7 +58,7 @@ return (
           {/* logo */}
           <div className="sidebar-logo">
             <WhatshotIcon />
-            RDx
+            <Typography style={{ color: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'}}>TheGRAM</Typography>
           </div>
 
           {/* avatar */}
@@ -103,7 +104,7 @@ return (
                 <ListItemIcon>
                   <DashboardIcon style={{ color: "white" }} />
                 </ListItemIcon>
-                <ListItemText primary="Feed" />
+                <ListItemText primary="Feed"/>
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
@@ -180,7 +181,7 @@ return (
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 20
+              marginTop: 10
             }}
           >
             <Feed />

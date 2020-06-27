@@ -44,17 +44,33 @@ export default function Story(){
         </Grid>
 
         <Grid container justify="center" alignItems="center">
+          <Grid Item style={{ padding: 4 }}>
+            <IconButton>
+              <Avatar
+                src="{}"
+                alt="+"
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  border: "3px solid",
+                  borderImageSrc:
+                    "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+                  borderRadius: "50%",
+                }}
+              />
+            </IconButton>
+          </Grid>
           {c.map((value) => (
             <>
-            <Grid Item style={{ padding: 20 }}>
+            <Grid Item style={{ padding: 4 }}>
               <IconButton>
                 <Avatar
                   alt={value}
                   src={faker.internet.avatar()}
                   style={{
-                    width: "60px",
-                    height: "60px",
-                    border: "4px solid white",
+                    width: "62px",
+                    height: "62px",
+                    border: "3px solid white",
                     borderImageSrc:
                       "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
                     borderRadius: "50%",

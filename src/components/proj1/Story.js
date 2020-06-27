@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import faker from "faker";
 
 export default function Story(){
-    const c = [1,2,3,4,5,6,7]
+    const c = [1,2,3,4,5,6,7,8]
     return (
       <Paper
         style={{
@@ -45,14 +45,15 @@ export default function Story(){
 
         <Grid container justify="center" alignItems="center">
           {c.map((value) => (
+            <>
             <Grid Item style={{ padding: 20 }}>
               <IconButton>
                 <Avatar
                   alt={value}
                   src={faker.internet.avatar()}
                   style={{
-                    width: "80px",
-                    height: "80px",
+                    width: "60px",
+                    height: "60px",
                     border: "4px solid white",
                     borderImageSrc:
                       "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
@@ -61,6 +62,7 @@ export default function Story(){
                 />
               </IconButton>
             </Grid>
+            </>
           ))}
         </Grid>
       </Paper>

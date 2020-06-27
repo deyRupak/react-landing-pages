@@ -180,7 +180,7 @@ return (
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: 20,
+              marginTop: 20
             }}
           >
             <Feed />

@@ -7,6 +7,7 @@ import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import faker from "faker";
+import Post from './Post';
 
 export default function Feed() {
   const c = [1, 2, 3, 4, 5, 6, 7];
@@ -16,30 +17,12 @@ export default function Feed() {
         width: "auto",
         height: "auto",
         backgroundColor: "transparent",
+        textAlign: "left",
+        overflow: 'hidden'
       }}
       elevation={0}
     >
-      <Grid
-        container
-        direction="row"
-        justify="space-between"
-        alignItems="center"
-        style={{ color: "white" }}
-      >
-        <Grid item style={{ fontSize: 20 }}>
-          <b>Feed</b>
-        </Grid>
-        <Grid item>
-        </Grid>
-      </Grid>
-
-      <Grid container justify="center" alignItems="center">
-        {c.map((value) => (
-          <Grid Item style={{ padding: 20 }}>
-             <img src={faker.image.abstract(100,100)} />
-          </Grid>
-        ))}
-      </Grid>
+      <Post />
     </Paper>
   );
 }

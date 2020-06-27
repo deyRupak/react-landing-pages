@@ -1,6 +1,5 @@
 .bg {
     background-color: #191c21;
-    /* #b4b9c2;*/
     height: 100vh;
 }
 
@@ -28,10 +27,7 @@
 .logout {
     padding: 0.8rem;
     padding-top: 0.5rem; 
-    /* bottom: 0; */
 }
-
-/* linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%) */
 
 .list-item-font {
     font-size: 0.5rem;

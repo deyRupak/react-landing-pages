@@ -1,17 +1,16 @@
 import React from 'react';
+
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-
 import InputBase from '@material-ui/core/InputBase';
+
 import Badge from '@material-ui/core/Badge';
-
 import SearchIcon from '@material-ui/icons/Search';
-
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import SendIcon from '@material-ui/icons/Send';
-import Button from '@material-ui/core/Button';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 
 import './Styles.css';
@@ -105,12 +104,12 @@ export default function Navbar() {
                     <div className={classes.sectionDesktop}>
                         <IconButton color="inherit">
                             <Badge badgeContent={1}>
-                                <SendIcon />
+                                <SendIcon fontSize="small"/>
                             </Badge>
                         </IconButton>
                         <IconButton color="inherit">
                             <Badge badgeContent={1}>
-                                <NotificationsNoneIcon />
+                                <NotificationsNoneIcon fontSize="small"/>
                             </Badge>
                         </IconButton>
                         <IconButton

@@ -1,44 +1,39 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+
 import './Styles.css'
+import Navbar from './Navbar';
+import Story from './Story';
+import Feed from './Feed';
 
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-
-import Button from '@material-ui/core/Button';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import VisibilityIcon from "@material-ui/icons/Visibility";
 import Paper from '@material-ui/core/Paper';
-import WhatshotIcon from '@material-ui/icons/Whatshot';
+import Chip from '@material-ui/core/Chip';
+import TableCell from '@material-ui/core/TableCell';
+import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+
+
+import WhatshotIcon from '@material-ui/icons/Whatshot';
 import SearchIcon from '@material-ui/icons/Search';
-import DraftsIcon from '@material-ui/icons/Drafts';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import SendIcon from '@material-ui/icons/Send';
 import SettingsIcon from '@material-ui/icons/Settings';
-import Badge from '@material-ui/core/Badge';
-
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-
-import Chip from '@material-ui/core/Chip';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
-
-import Navbar from './Navbar';
-import Story from './Story';
-import Feed from './Feed';
 
 import faker from 'faker';
 
@@ -58,7 +53,7 @@ return (
           {/* logo */}
           <div className="sidebar-logo">
             <WhatshotIcon />
-            <Typography style={{ color: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'}}>TheGRAM</Typography>
+            <Typography style={{ color: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}><b>TheGRAM</b></Typography>
           </div>
 
           {/* avatar */}
@@ -102,39 +97,39 @@ return (
             <List>
               <ListItem button alignItems="center">
                 <ListItemIcon>
-                  <DashboardIcon style={{ color: "white" }} />
+                  <DashboardIcon style={{ color: "white" }} fontSize="small"/>
                 </ListItemIcon>
                 <ListItemText primary="Feed"/>
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
-                  <SearchIcon style={{ color: "white" }} />
+                  <SearchIcon style={{ color: "white" }} fontSize="small"/>
                 </ListItemIcon>
                 <ListItemText primary="Explore" />
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
-                  <NotificationsNoneIcon style={{ color: "white" }} />
+                  <NotificationsNoneIcon style={{ color: "white" }} fontSize="small"/>
                 </ListItemIcon>
                 <ListItemText primary="Notifications" />
                 <Chip label="1" />
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
-                  <SendIcon style={{ color: "white" }} />
+                  <SendIcon style={{ color: "white" }} fontSize="small"/>
                 </ListItemIcon>
                 <ListItemText primary="Direct" />
                 <Chip label="1" />
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
-                  <EqualizerIcon style={{ color: "white" }} />
+                  <EqualizerIcon style={{ color: "white" }} fontSize="small"/>
                 </ListItemIcon>
                 <ListItemText primary="Stats" />
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
-                  <SettingsIcon style={{ color: "white" }} />
+                  <SettingsIcon style={{ color: "white" }} fontSize="small"/>
                 </ListItemIcon>
                 <ListItemText primary="Settings" />
               </ListItem>
@@ -142,12 +137,14 @@ return (
           </div>
           <Divider style={{ backgroundColor: "#b4b9c2" }} variant="middle" />
           <div className="logout">
+            <Link to={{ pathname: `/` }} style={{ textDecoration: 'none' }}>
             <ListItem button>
               <ListItemIcon>
-                <ExitToAppIcon style={{ color: "white" }} />
+                <ExitToAppIcon style={{ color: "white" }} fontSize="small"/>
               </ListItemIcon>
-              <ListItemText primary="Logout" />
+                <ListItemText primary="Home" style={{ color: "white" }}/>
             </ListItem>
+            </Link>
           </div>
         </Paper>
       </Grid>

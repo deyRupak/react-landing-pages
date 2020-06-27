@@ -14,8 +14,27 @@ import {
 } from "react-router-dom";
 
 import proj1 from './components/proj1/index'
+import img1 from './components/proj1/theGram.jpg'
 
 function App() {
+  const project = [
+    {
+      image : img1,
+      number: 1,
+      title: 'Redesigning The Gram'
+    },
+    {
+      img : {},
+      number: 2,
+      title: 'Coming Soon'
+    },
+    {
+      img: {},
+      number: 3,
+      title: 'Coming Soon'
+    }
+
+  ]
   return (
     <Router>
       <div className="App">
@@ -38,17 +57,17 @@ function App() {
                     maxWidth: "100%",
                     }}
                     >
-                      {[1, 2, 3].map((value) => (
+                      {project.map((value) => (
                       <Grid key={value} item>
-                        <Link to={{pathname: `/${value}`}}>
-                            <HomeGrid number={value} />
+                        <Link to={{pathname: `/${value.number}`}} style={{textDecoration: 'none'}}>
+                            <HomeGrid number={value.number} image={value.image} title={value.title}/>
                         </Link>
                           
                       </Grid>
                       ))}
                     </Grid>
 
-                  <p style={{ marginTop: "12vh", fontSize: 12 }}>under construction</p>
+                  <p style={{ marginTop: "12vh", fontSize: 12 }}>deyRupak</p>
               <a href="https://github.com/deyRupak" style={{ textDecoration: "none", color: 'white'}}>
                   <GitHubIcon style={{ position: "fixed", bottom: 30, right: 30 }} />
                   </a>

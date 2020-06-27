@@ -40,7 +40,7 @@ function App() {
       <div className="App">
 
           <Switch>
-              <Route path="/" exact>
+              <Route path="/react-landing-pages" exact>
               <div className="home">
                   <header className="App-header">
                     <p className="hr-width">

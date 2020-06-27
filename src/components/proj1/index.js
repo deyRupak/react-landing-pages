@@ -137,7 +137,7 @@ return (
           </div>
           <Divider style={{ backgroundColor: "#b4b9c2" }} variant="middle" />
           <div className="logout">
-            <Link to={{ pathname: `/` }} style={{ textDecoration: 'none' }}>
+            <Link to={{ pathname: `/react-landing-pages` }} style={{ textDecoration: 'none' }}>
             <ListItem button>
               <ListItemIcon>
                 <ExitToAppIcon style={{ color: "white" }} fontSize="small"/>

@@ -59,7 +59,7 @@ function App() {
                     >
                       {project.map((value) => (
                       <Grid key={value} item>
-                        <Link to={{pathname: `/${value.number}`}} style={{textDecoration: 'none'}}>
+                          <Link to={{ pathname: `/react-landing-pages/${value.number}`}} style={{textDecoration: 'none'}}>
                             <HomeGrid number={value.number} image={value.image} title={value.title}/>
                         </Link>
                           
@@ -75,7 +75,7 @@ function App() {
               </div>
               </Route>
 
-              <Route path="/1" exact component={proj1} />
+              <Route path="/react-landing-pages/1" exact component={proj1} />
           
           </Switch>
           

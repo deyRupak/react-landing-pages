@@ -1,5 +1,7 @@
 # react-landing-pages
 
+<h2>Desktop Specific Landing Pages created with React.</h2>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

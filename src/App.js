@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 
 import proj1 from './components/proj1/index'
+import proj2 from './components/proj2/index'
 import img1 from './components/proj1/theGram.jpg'
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
               </Route>
 
               <Route path="/react-landing-pages/1" exact component={proj1} />
+              <Route path="/react-landing-pages/2" exact component={proj2} />
           
           </Switch>
           

@@ -8,6 +8,6 @@ import './Styles.css'
 
 export default function Left() {
     return (
-        <Paper style={{height: '690px'}}>hi</Paper>
+        <Paper>hi</Paper>
     )
 }

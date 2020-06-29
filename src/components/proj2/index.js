@@ -11,7 +11,7 @@ import './Styles.css'
 
 export default function index() {
     return (
-        <div className="home">
+        <div className="home2">
             
             <Grid container 
                 direction="row"

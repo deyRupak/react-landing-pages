@@ -1,4 +1,6 @@
-.home {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.home2 {
     background: url(../../static/images/cards/wall4.jpg) no-repeat center center fixed;
     background-size: cover;
 }

@@ -5,6 +5,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
+import './Styles.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,11 +30,22 @@ export default function InfoCard(props) {
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
             {props.number}
-            </Avatar>
+          </Avatar>
         }
       />
-      <CardMedia className={classes.media} title={props.title} image={props.image}/>
-      <CardContent style={{color: 'white', paddingBottom: 40, paddingTop: 25}}>
+      <CardMedia
+        className={classes.media}
+        title={props.title}
+        image={props.image}
+      />
+      <CardContent
+        style={{
+          color: "white",
+          paddingBottom: 40,
+          paddingTop: 25,
+          fontFamily: 'Marcellus SC, serif'
+        }}
+      >
         {props.title}
       </CardContent>
     </Card>

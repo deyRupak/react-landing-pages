@@ -16,6 +16,7 @@ import {
 import proj1 from './components/proj1/index'
 import proj2 from './components/proj2/index'
 import img1 from './components/proj1/theGram.jpg'
+import img2 from './components/proj2/places.jpg'
 
 function App() {
   const project = [
@@ -25,12 +26,12 @@ function App() {
       title: 'Redesigning The Gram'
     },
     {
-      img : {},
+      image : img2,
       number: 2,
-      title: 'Coming Soon'
+      title: 'Explore'
     },
     {
-      img: {},
+      image: {},
       number: 3,
       title: 'Coming Soon'
     }

@@ -3,7 +3,6 @@ import React from 'react'
 import Nav from './Nav'
 import Right from './Right'
 
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 

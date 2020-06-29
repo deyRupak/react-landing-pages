@@ -9,57 +9,43 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  searchButton: {
-    marginRight: theme.spacing(4),
-  },
-  title: {
-    flexGrow: 1,
-    textAlign: "left",
-    fontFamily: "Lobster, cursive",
-  },
+root: {
+flexGrow: 1,
+},
+searchButton: {
+marginRight: theme.spacing(4),
+},
+title: {
+flexGrow: 1,
+textAlign: "left",
+fontFamily: "Lobster, cursive",
+},
 }));
 
 export default function ButtonAppBar() {
-    const classes = useStyles();
+const classes = useStyles();
 
-    return (
-      <div className={classes.root}>
-        <AppBar position="static" style={{ background: "transparent" }}>
-          <Toolbar>
+return (
+<div className={classes.root}>
+    <AppBar position="static" style={{ background: "transparent" }}>
+        <Toolbar>
             <Typography variant="h4" className={classes.title}>
-              Places.
+                Places.
             </Typography>
-            <IconButton
-              edge="start"
-              className={classes.searchButton}
-              color="black"
-              aria-label="search"
-            >
-              <SearchIcon />
+            <IconButton edge="start" className={classes.searchButton} color="black" aria-label="search">
+                <SearchIcon />
             </IconButton>
-            <Button
-              color="black"
-              style={{ paddingLeft: 38, paddingRight: 38, fontWeight: 600 }}
-            >
-              Home
+            <Button color="black" style={{ paddingLeft: 38, paddingRight: 38, fontWeight: 600 }}>
+                Home
             </Button>
-            <Button
-              color="black"
-              style={{ paddingLeft: 38, paddingRight: 38, fontWeight: 600 }}
-            >
-              Places
+            <Button color="black" style={{ paddingLeft: 38, paddingRight: 38, fontWeight: 600 }}>
+                Places
             </Button>
-            <Button
-              color="black"
-              style={{ paddingLeft: 38, paddingRight: 38, fontWeight: 600 }}
-            >
-              Stories
+            <Button color="black" style={{ paddingLeft: 38, paddingRight: 38, fontWeight: 600 }}>
+                Stories
             </Button>
-          </Toolbar>
-        </AppBar>
-      </div>
-    );
+        </Toolbar>
+    </AppBar>
+</div>
+);
 }

@@ -15,6 +15,8 @@ import {
 
 import proj1 from './components/proj1/index'
 import proj2 from './components/proj2/index'
+import proj3 from './components/proj3/index'
+
 import img1 from './components/proj1/theGram.jpg'
 import img2 from './components/proj2/places.jpg'
 
@@ -79,6 +81,7 @@ function App() {
 
               <Route path="/react-landing-pages/1" exact component={proj1} />
               <Route path="/react-landing-pages/2" exact component={proj2} />
+              <Route path="/react-landing-pages/3" exact component={proj3} />
           
           </Switch>
           

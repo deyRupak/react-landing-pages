@@ -12,6 +12,7 @@
     "faker": "^4.1.0",
     "gh-pages": "^3.0.0",
     "react": "^16.13.1",
+    "react-acrylic": "^0.1.1",
     "react-blur": "^0.6.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",

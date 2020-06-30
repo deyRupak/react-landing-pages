@@ -14,6 +14,24 @@ return(
 <>
     <div className="bg">
         <Nav />
+            
+            <Grid container direction="row" justify="flex-start" alignItems="flex-start">
+                <Grid item xs={1}>
+                    <Paper style={{marginLeft: 60, textAlign: 'center', background:'transparent'}} elevation={0}>
+                        <Typography style={{ fontFamily: 'Permanent Marker, cursive', fontSize: 140, color: 'white'}}>
+                                Kitchen
+                        </Typography>
+                    </Paper>
+                </Grid>
+                <Grid item>
+                    <Paper style={{ marginLeft: 0, textAlign: 'center', marginTop: 60, background: 'transparent' }} elevation={0}>
+                        <Typography style={{ fontFamily: 'Permanent Marker, cursive', fontSize: 200, color: 'white' }}>
+                            Fever
+                        </Typography>
+                    </Paper>
+                </Grid>
+            </Grid>
+        
         <Acrylic colorOverlay='#fff5' opacity='0.2' width='35%' height='80vh' top='20%' blur={12} borderRadius='2px'
             borderRadius='2px' left='60%'>
             <Grid container direction="row" justify="flex-start" alignItems="flex-end">

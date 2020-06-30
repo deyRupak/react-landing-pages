@@ -1,5 +1,6 @@
 import React from 'react'
 import './Styles3.css'
+import Nav from './Nav'
 
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -12,6 +13,7 @@ export default function index(){
 return(
 <>
     <div className="bg">
+        <Nav />
         <Acrylic colorOverlay='#fff5' opacity='0.2' width='35%' height='80vh' top='20%' blur={12} borderRadius='2px'
             borderRadius='2px' left='60%'>
             <Grid container direction="row" justify="flex-start" alignItems="flex-end">

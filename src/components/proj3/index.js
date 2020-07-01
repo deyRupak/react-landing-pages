@@ -12,7 +12,7 @@ import Acrylic from 'react-acrylic'
 export default function index(){
 return(
 <>
-    <div className="bg">
+    <div className="bg3">
         <Nav />
             
             <Grid container direction="row" justify="flex-start" alignItems="flex-start">

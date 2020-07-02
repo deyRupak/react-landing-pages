@@ -46,7 +46,7 @@ return (
       {/* sidebar */}
       <Grid item xs={2}>
         <Paper
-          style={{ height: "98vh", width: "98%" }}
+          style={{ height: "100%", width: "98%" }}
           elevation={3}
           style={{ backgroundColor: "#333842", color: "white" }}
         >

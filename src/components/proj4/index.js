@@ -2,12 +2,16 @@ import React from 'react'
 
 import { Breakpoint, BreakpointProvider } from 'react-socks';
 import Acrylic from 'react-acrylic'
+
 import {Grid, Paper, List, ListItem, ListItemIcon, ListItemText, Table, TableBody, TableRow, TableCell} from '@material-ui/core'
+
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import AcUnitIcon from '@material-ui/icons/AcUnit';
+import MenuIcon from '@material-ui/icons/Menu';
 
+import Hero from './Hero'
 import './Styles4.css'
 
 export default function index(){
@@ -21,13 +25,13 @@ return (
 
             <Grid item xs={2}>
 
-                <Grid container direction="column" justify="space-around" alignItems="center"
-                    style={{height: '100vh'}}>
+                <Grid container direction="column" justify="space-between" alignItems="center"
+                    style={{height: '100vh', paddingTop: 30, paddingBottom: 30}}>
                     <Grid item>
-                        <Paper>
+                        <Paper elevation={0} style={{background: 'transparent', color: 'white'}}>
                             <ListItem>
                                 <ListItemIcon>
-                                    <AcUnitIcon />
+                                        <AcUnitIcon style={{ color: 'white' }}/>
                                 </ListItemIcon>
                                 <ListItemText primary="APLINE" />
                             </ListItem>
@@ -53,12 +57,28 @@ return (
                 </Grid>
             </Grid>
 
-            <Grid item xs={6}>
-                <Paper>1</Paper>
+            <Grid item xs={8}>
+                    <Grid container direction="column" justify="space-between" alignItems="center"
+                        style={{ height: '100vh', paddingTop: 30, paddingBottom: 30 }}>
+                        <Grid item>
+                            <Hero />
+                        </Grid>
+                    </Grid>
             </Grid>
 
             <Grid item xs={2}>
-                <Paper>1</Paper>
+                    <Grid container direction="column" justify="space-between" alignItems="center"
+                        style={{ height: '100vh', paddingTop: 30, paddingBottom: 30}}>
+                        <Grid item>
+                            <Paper elevation={0} style={{ background: 'transparent', color: 'white' }}>
+                                <ListItem>
+                                    <ListItemIcon>
+                                        <MenuIcon style={{ color: 'white' }} />
+                                    </ListItemIcon>
+                                </ListItem>
+                            </Paper>
+                        </Grid>
+                    </Grid>
             </Grid>
 
 

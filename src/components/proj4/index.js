@@ -3,7 +3,7 @@ import React from 'react'
 import { Breakpoint, BreakpointProvider } from 'react-socks';
 import Acrylic from 'react-acrylic'
 
-import {Grid, Paper, List, ListItem, ListItemIcon, ListItemText, Table, TableBody, TableRow, TableCell} from '@material-ui/core'
+import {Grid, Paper, List, IconButton, ListItem, ListItemIcon, ListItemText, Table, TableBody, TableRow, TableCell} from '@material-ui/core'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -23,7 +23,7 @@ return (
 
         <Grid container direction="row" justify="space-around" alignItems="center">
 
-            <Grid item xs={2}>
+            <Grid item xs={1}>
 
                 <Grid container direction="column" justify="space-between" alignItems="center"
                     style={{height: '100vh', paddingTop: 30, paddingBottom: 30}}>
@@ -57,7 +57,7 @@ return (
                 </Grid>
             </Grid>
 
-            <Grid item xs={8}>
+            <Grid item xs={10}>
                     <Grid container direction="column" justify="space-between" alignItems="center"
                         style={{ height: '100vh', paddingTop: 30, paddingBottom: 30 }}>
                         <Grid item>
@@ -66,14 +66,16 @@ return (
                     </Grid>
             </Grid>
 
-            <Grid item xs={2}>
+            <Grid item xs={1}>
                     <Grid container direction="column" justify="space-between" alignItems="center"
                         style={{ height: '100vh', paddingTop: 30, paddingBottom: 30}}>
                         <Grid item>
                             <Paper elevation={0} style={{ background: 'transparent', color: 'white' }}>
                                 <ListItem>
                                     <ListItemIcon>
+                                        <IconButton>
                                         <MenuIcon style={{ color: 'white' }} />
+                                        </IconButton>
                                     </ListItemIcon>
                                 </ListItem>
                             </Paper>

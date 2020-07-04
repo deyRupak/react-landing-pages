@@ -4,6 +4,7 @@ import { Breakpoint, BreakpointProvider } from 'react-socks';
 import Acrylic from 'react-acrylic'
 
 import {Grid, Paper, List, IconButton, ListItem, ListItemIcon, ListItemText, Table, TableBody, TableRow, TableCell} from '@material-ui/core'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -31,9 +32,15 @@ return (
                         <Paper elevation={0} style={{background: 'transparent', color: 'white'}}>
                             <ListItem>
                                 <ListItemIcon>
+                                        <Link
+                                            to={{ pathname: `/react-landing-pages` }}
+                                            style={{ textDecoration: 'none', color: 'white' }}
+                                        >
+                                    <IconButton>
                                         <AcUnitIcon style={{ color: 'white' }}/>
+                                    </IconButton>
+                                        </Link>
                                 </ListItemIcon>
-                                <ListItemText primary="APLINE" />
                             </ListItem>
                         </Paper>
                     </Grid>

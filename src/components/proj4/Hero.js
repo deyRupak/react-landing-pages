@@ -4,6 +4,8 @@ import { Grid, Typography, TextField, Chip, IconButton, MenuItem, Button, Paper,
 import SearchIcon from '@material-ui/icons/Search';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 
+import Acrylic from 'react-acrylic'
+
 const handleClick = () => {
 
 }
@@ -13,45 +15,47 @@ export default function Hero() {
 
     return (
         <>
-        <TableContainer component={Paper} style={{background: 'transparent'}} elevation={0}>
+            <TableContainer component={Paper} style={{ background: 'rgba(124, 210, 230,     0.4)'}} elevation={0}>
             <Table>
                 <TableBody>
                     {/* dropdown */}
+                        
                     <TableRow>
-                        <TableCell style={{ paddingRight: 0, borderBottom: '0px', color: 'white' }}>Traveller Type</TableCell>
-                        <TableCell style={{ paddingTop: 0, paddingLeft: 6, borderBottom: '0px'}}>
+                            <TableCell style={{ paddingRight: 0, borderBottom: '0px', color: 'white', fontFamily: 'Abel, sans-serif' }}>Traveller Type</TableCell>
+                            <TableCell style={{ paddingTop: 0, paddingLeft: 6, borderBottom: '0px'}}>
                             <TextField
-                                id="standard-select-currency"
+                                id="standard-select-type"
                                 select
-                                label="Select"
+                                label="Couple"
                                 style={{width: '20ch'}}
                             >
                             </TextField>
                         </TableCell>
 
-                        <TableCell style={{ paddingRight: 0, borderBottom: '0px', color: 'white' }}>Program</TableCell>
+                            <TableCell style={{ paddingRight: 0, borderBottom: '0px', color: 'white', fontFamily: 'Abel, sans-serif' }}>Program</TableCell>
                         <TableCell style={{ paddingTop: 0, paddingLeft: 6, borderBottom: '0px' }}>
                             <TextField
-                                id="standard-select-currency"
+                                id="standard-select-program"
                                 select
-                                label="Select"
-                                style={{ width: '20ch', color: 'white' }}
+                                label="Mountaineering"
+                                style={{ width: '20ch' }}
                             >
                             </TextField>
                         </TableCell>
 
-                        <TableCell style={{ paddingRight: 0, borderBottom: '0px', color: 'white' }}>Set Location</TableCell>
+                            <TableCell style={{ paddingRight: 0, borderBottom: '0px', color: 'white', fontFamily: 'Abel, sans-serif' }}>Set Location</TableCell>
                         <TableCell style={{ paddingTop: 0, paddingLeft: 6, borderBottom: '0px' }}>
                             <TextField
-                                id="standard-select-currency"
+                                id="standard-select-location"
                                 select
-                                label="Select"
+                                label="CH"
                                 style={{ width: '20ch' }}
                             >
                             </TextField>
                         </TableCell>
                         
                     </TableRow>
+                    
                 </TableBody>
             </Table>
         </TableContainer>
@@ -63,7 +67,7 @@ export default function Hero() {
                     <TableRow>
                         <TableCell style={{borderBottom: '0px'}}>
                             <FormControl fullWidth variant="outlined">
-                                <InputLabel htmlFor="outlined-adornment-search" style={{ color: 'white' }}>Search</InputLabel>
+                                    <InputLabel htmlFor="outlined-adornment-search" style={{ color: 'white', fontFamily: 'Abel, sans-serif' }}>Search</InputLabel>
                                 <OutlinedInput
                                     id="outlined-adornment-search"
                                     startAdornment={<InputAdornment position="start"><SearchIcon /></InputAdornment>}
@@ -84,13 +88,13 @@ export default function Hero() {
                         {/* main */}
                         <TableRow>
                             <TableCell style={{paddingLeft: 0, color: 'white', borderBottom: '0px'}}>
-                                <Typography>
-                                    <span style={{fontSize: '90px'}}>MOUNTAIN</span><br />
+                                <Typography style={{fontFamily: 'Abel, sans-serif'}}>
+                                    <span style={{fontSize: '90px'}}>Mountain</span><br />
                                     <span style={{ fontSize: '47px' }}>Climbing Trips & Tours</span>
                                 </Typography>
                                 
                                     <Chip label="View Program" variant="outlined" 
-                                        style={{color: 'white', border: '1px solid white', marginTop: 10}} onClick={handleClick}/>
+                                    style={{ color: 'white', border: '1px solid white', marginTop: 10, fontFamily: 'Abel, sans-serif'}} onClick={handleClick}/>
                                 
                             </TableCell>
 
@@ -101,7 +105,7 @@ export default function Hero() {
                             </TableCell>
 
                             <TableCell style={{ paddingLeft: 6, paddingRight: 0, textAlign: 'justify', borderBottom: '0px' }}>
-                                <Typography style={{textAlign: 'justify', color:'white'}}>
+                                <Typography style={{ textAlign: 'justify', color: 'white', fontFamily: 'Abel, sans-serif'}}>
                                     Watch Videos <br /><br />
                                     Lorem ipsum dolor sit, amet consectetur<br /> adipisicing elit.
                                     Vitae corporis assumenda <br /> blanditiis, laboriosam veritatis dicta ipsam.
@@ -118,7 +122,17 @@ export default function Hero() {
 
                         {/* about */}
                         <TableRow>
-
+                            <TableCell style={{borderBottom: '0px', paddingLeft: 0}}>
+                                <Typography style={{ textAlign: 'justify', color: 'white', fontFamily: 'Abel, sans-serif' }}>
+                                    <br />About<br />
+                                    <span style={{fontSize: '14px'}}>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+                                    Vitae corporis assumenda blanditiis, laboriosam veritatis dicta ipsam.<br />
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
+                                    Et impedit dolores reiciendis corporis enim, labore illum molestiae.<br />
+                                     Dolor odit officia ut unde, eos similique porro, obcaecati dolorum quaerat facere rerum!</span>
+                                </Typography>
+                            </TableCell>
                         </TableRow>
                     </TableBody>
                 </Table>

@@ -26,16 +26,16 @@ export default function Nav() {
         <div className={classes.root}>
             <AppBar position="static" style={{background: 'transparent'}}>
                 <Toolbar>
-                    
+                    <Link
+                        to={{ pathname: `/react-landing-pages` }}
+                        style={{ textDecoration: 'none', color: 'white' }}
+                    >
                     <IconButton edge="start" className={classes.menuButton} color="white" aria-label="menu">
-                        <Link
-                            to={{ pathname: `/react-landing-pages` }}
-                            style={{ textDecoration: 'none', color: 'white' }}
-                        >
-                            <MenuIcon />
-                        </Link>
+                        
+                            <MenuIcon style={{color: 'white'}}/>
+                        
                     </IconButton>
-                    
+                    </Link>
                 </Toolbar>
             </AppBar>
         </div>

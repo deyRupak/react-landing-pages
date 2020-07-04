@@ -20,6 +20,8 @@ import proj4 from './components/proj4/index'
 
 import img1 from './components/proj1/theGram.jpg'
 import img2 from './components/proj2/places.jpg'
+import img3 from './components/proj3/kitchen.jpg'
+import img4 from './components/proj4/tour.jpg'
 
 function App() {
   const project = [
@@ -34,11 +36,28 @@ function App() {
       title: 'Explore'
     },
     {
-      image: {},
+      image: img3,
       number: 3,
+      title: 'Kitchen Fever'
+    }
+  ]
+
+  const project2 = [
+    {
+      image: img4,
+      number: 4,
+      title: 'Trips & Tours'
+    },
+    {
+      image: {},
+      number: 5,
+      title: 'Coming Soon'
+    },
+    {
+      image: {},
+      number: 6,
       title: 'Coming Soon'
     }
-
   ]
   return (
     <Router>
@@ -55,12 +74,9 @@ function App() {
                   </header>
                     <Grid
                     container
-                    justify="center"
-                    spacing={8}
-                    style={{
-                    display: "flex",
-                    maxWidth: "100%",
-                    }}
+                    justify="space-evenly"
+                    alignItems = "center"
+                    style={{marginBottom: 40}}
                     >
                       {project.map((value) => (
                       <Grid key={value} item>
@@ -72,7 +88,23 @@ function App() {
                       ))}
                     </Grid>
 
-                  <p style={{ marginTop: "12vh", fontSize: 12 }}>deyRupak</p>
+              <Grid
+                container
+                justify="space-evenly"
+                alignItems="center"
+                style={{ marginBottom: 40 }}
+              >
+                {project2.map((value) => (
+                  <Grid key={value} item>
+                    <Link to={{ pathname: `/react-landing-pages/${value.number}` }} style={{ textDecoration: 'none' }}>
+                      <HomeGrid number={value.number} image={value.image} title={value.title} />
+                    </Link>
+
+                  </Grid>
+                ))}
+              </Grid>
+
+                  <p style={{fontSize: 12, paddingBottom: 40 }}>deyRupak</p>
               <a href="https://github.com/deyRupak" style={{ textDecoration: "none", color: 'white'}}>
                   <GitHubIcon style={{ position: "fixed", bottom: 30, right: 30 }} />
                   </a>

@@ -45,17 +45,29 @@ return (
                         </Paper>
                     </Grid>
                     <Grid item>
-                            <Paper style={{ background: 'transparent', borderRadius: '8%', border: '1px solid white'}}>
+                            <Paper style={{ background: 'transparent', borderRadius: '6%', border: '1px solid white'}}>
                                 <Table>
                                 <TableBody>
                                 <TableRow>
-                                            <TableCell style={{borderBottom : '0'}}><FacebookIcon style={{color: 'white'}}/></TableCell>
+                                            <TableCell style={{borderBottom : '0'}}>
+                                                <IconButton>
+                                                <FacebookIcon style={{color: 'white'}}/>
+                                                </IconButton>    
+                                            </TableCell>
                                 </TableRow>
                                 <TableRow>
-                                            <TableCell style={{ borderBottom: '0' }}><InstagramIcon style={{ color: 'white' }}/></TableCell>
+                                            <TableCell style={{ borderBottom: '0' }}>
+                                                <IconButton>
+                                                <InstagramIcon style={{ color: 'white' }}/>
+                                                </IconButton>    
+                                            </TableCell>
                                 </TableRow>
                                 <TableRow>
-                                            <TableCell style={{ borderBottom: '0' }}><TwitterIcon style={{ color: 'white' }}/></TableCell>
+                                            <TableCell style={{ borderBottom: '0' }}>
+                                                <IconButton>
+                                                <TwitterIcon style={{ color: 'white' }}/>
+                                                </IconButton>
+                                            </TableCell>
                                 </TableRow>
                                 </TableBody>
                             </Table>

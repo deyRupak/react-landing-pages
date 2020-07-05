@@ -42,11 +42,11 @@ export default function index(){
   
 return (
   <>
-    <Grid container className="bg" justify="center" alignItems="center">
+    <Grid container className="bg" justify="center" alignItems="center" style={{marginTop: 30, marginBottom: 30}}>
       {/* sidebar */}
       <Grid item xs={2}>
         <Paper
-          style={{ height: "100%", width: "98%" }}
+          style={{ height: "98vh", width: "98%" }}
           elevation={3}
           style={{ backgroundColor: "#333842", color: "white" }}
         >

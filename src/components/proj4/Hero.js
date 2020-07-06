@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Grid, Typography, TextField, Chip, IconButton, MenuItem, Button, Paper, OutlinedInput, InputLabel, FormControl, InputAdornment, List, ListItem, ListItemIcon, ListItemText, TableContainer, Table, TableBody, TableRow, TableCell } from '@material-ui/core'
+import { Typography, TextField, Chip, IconButton, Paper, OutlinedInput, InputLabel, 
+        FormControl, InputAdornment, TableContainer, Table, TableBody, TableRow, 
+        TableCell } from '@material-ui/core'
+
 import SearchIcon from '@material-ui/icons/Search';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
-
-import Acrylic from 'react-acrylic'
 
 const handleClick = () => {
 

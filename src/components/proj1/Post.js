@@ -46,7 +46,7 @@ return (
                             style={{ color: 'white' }}
                             />
                             <img src={require('../../static/images/cards/wall.jpg')} height='280' width='580'
-                                style={{borderRadius: '3%'}} />
+                                style={{borderRadius: '3%'}} alt= ""/>
                             <br />
                             <IconButton aria-label="add to favorites" style={{ color: 'white' }}>
                                 <FavoriteBorderIcon />
@@ -77,7 +77,7 @@ return (
                             style={{ color: 'white' }}
                             />
                             <img src={require('../../static/images/cards/wall2.jpg')} height='280' width='280'
-                                style={{ borderRadius: '3%' }} />
+                                style={{ borderRadius: '3%' }} alt=""/>
                             <br />
                             <IconButton aria-label="add to favorites" style={{ color: 'white' }}>
                                 <FavoriteBorderIcon />

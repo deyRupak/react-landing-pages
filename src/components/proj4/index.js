@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { Breakpoint, BreakpointProvider } from 'react-socks';
 import Acrylic from 'react-acrylic'
 
-import {Grid, Paper, List, IconButton, ListItem, ListItemIcon, ListItemText, Table, TableBody, TableRow, TableCell} from '@material-ui/core'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {Grid, Paper, IconButton, ListItemIcon, ListItem, Table, TableBody, TableRow, TableCell} from '@material-ui/core'
+import { Link } from "react-router-dom";
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';

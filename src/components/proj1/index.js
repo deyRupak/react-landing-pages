@@ -7,9 +7,6 @@ import Story from './Story';
 import Feed from './Feed';
 
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 
@@ -42,7 +39,7 @@ export default function index(){
   
 return (
   <>
-    <Grid container className="bg" justify="center" alignItems="center" style={{marginTop: 30, marginBottom: 30}}>
+    <Grid container className="bg" justify="center" alignItems="center" style={{paddingTop: 30, paddingBottom: 30}}>
       {/* sidebar */}
       <Grid item xs={2}>
         <Paper

@@ -17,6 +17,7 @@ import proj1 from './components/proj1/index'
 import proj2 from './components/proj2/index'
 import proj3 from './components/proj3/index'
 import proj4 from './components/proj4/index'
+import proj5 from './components/proj5/index'
 
 import img1 from './components/proj1/theGram.jpg'
 import img2 from './components/proj2/places.jpg'
@@ -62,31 +63,36 @@ function App() {
   return (
     <Router>
       <div className="App">
-
-          <Switch>
-              <Route path="/react-landing-pages" exact>
-              <div className="home">
-                  <header className="App-header">
-                    <p className="hr-width">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <hr />
-                    </p>
-                  </header>
-                    <Grid
-                    container
-                    justify="space-evenly"
-                    alignItems = "center"
-                    style={{marginBottom: 40}}
+        <Switch>
+          <Route path="/react-landing-pages" exact>
+            <div className="home">
+              <header className="App-header">
+                <p className="hr-width">
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <hr />
+                </p>
+              </header>
+              <Grid
+                container
+                justify="space-evenly"
+                alignItems="center"
+                style={{ marginBottom: 40 }}
+              >
+                {project.map((value) => (
+                  <Grid key={value} item>
+                    <Link
+                      to={{ pathname: `/react-landing-pages/${value.number}` }}
+                      style={{ textDecoration: "none" }}
                     >
-                      {project.map((value) => (
-                      <Grid key={value} item>
-                          <Link to={{ pathname: `/react-landing-pages/${value.number}`}} style={{textDecoration: 'none'}}>
-                            <HomeGrid number={value.number} image={value.image} title={value.title}/>
-                        </Link>
-                          
-                      </Grid>
-                      ))}
-                    </Grid>
+                      <HomeGrid
+                        number={value.number}
+                        image={value.image}
+                        title={value.title}
+                      />
+                    </Link>
+                  </Grid>
+                ))}
+              </Grid>
 
               <Grid
                 container
@@ -96,30 +102,39 @@ function App() {
               >
                 {project2.map((value) => (
                   <Grid key={value} item>
-                    <Link to={{ pathname: `/react-landing-pages/${value.number}` }} style={{ textDecoration: 'none' }}>
-                      <HomeGrid number={value.number} image={value.image} title={value.title} />
+                    <Link
+                      to={{ pathname: `/react-landing-pages/${value.number}` }}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <HomeGrid
+                        number={value.number}
+                        image={value.image}
+                        title={value.title}
+                      />
                     </Link>
-
                   </Grid>
                 ))}
               </Grid>
 
-                  <p style={{fontSize: 12, paddingBottom: 40 }}>deyRupak</p>
-              <a href="https://github.com/deyRupak" style={{ textDecoration: "none", color: 'white'}}>
-                  <GitHubIcon style={{ position: "fixed", bottom: 30, right: 30 }} />
-                  </a>
-              
-              </div>
-              </Route>
+              <p style={{ fontSize: 12, paddingBottom: 40 }}>deyRupak</p>
+              <a
+                href="https://github.com/deyRupak"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <GitHubIcon
+                  style={{ position: "fixed", bottom: 30, right: 30 }}
+                />
+              </a>
+            </div>
+          </Route>
 
-              <Route path="/react-landing-pages/1" exact component={proj1} />
-              <Route path="/react-landing-pages/2" exact component={proj2} />
-              <Route path="/react-landing-pages/3" exact component={proj3} />
-              <Route path="/react-landing-pages/4" exact component={proj4} />
+          <Route path="/react-landing-pages/1" exact component={proj1} />
+          <Route path="/react-landing-pages/2" exact component={proj2} />
+          <Route path="/react-landing-pages/3" exact component={proj3} />
+          <Route path="/react-landing-pages/4" exact component={proj4} />
+          <Route path="/react-landing-pages/5" exact component={proj5} />
           
-          </Switch>
-          
-
+        </Switch>
       </div>
     </Router>
   );

@@ -1,7 +1,18 @@
-import React from 'react'
+import * as React from "react";
+import { useState } from "react";
+import { render } from "react-dom";
+import { Example } from "./Example";
 
-export default function index(){
+import "./styles.css";
+
+const index = () => {
     return (
-        <h1>5</h1>
-    )
+    <>
+      {/* <Refresh onClick={() => setCount(count + 1)} /> */}
+      <div className="example-container">
+        <Example />
+      </div>
+    </>
+  );
 }
+export default index
